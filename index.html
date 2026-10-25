@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#101827">
+  <meta name="description" content="Road Dodge — a free arcade traffic-dodging game.">
+  <title>Road Dodge</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">RD</span><div><strong>ROAD DODGE</strong><small>ARCADE DRIVE</small></div></div>
+      <div class="wallet"><span aria-hidden="true">◆</span> <b id="walletCoins">0</b><small>COINS</small></div>
+    </header>
+    <section class="game-shell" aria-label="Road Dodge game">
+      <canvas id="game" width="600" height="700" aria-label="Road Dodge game canvas"></canvas>
+      <div class="overlay" id="overlay">
+        <div class="panel" id="panel"></div>
+      </div>
+    </section>
+    <div class="mobile-controls" id="mobileControls" aria-label="Driving controls">
+      <button class="control-btn" data-control="left" aria-label="Steer left">◀</button>
+      <button class="control-btn vertical" data-control="up" aria-label="Move forward">▲</button>
+      <div class="control-center"><span>STEER</span><small>Hold to move</small></div>
+      <button class="control-btn vertical" data-control="down" aria-label="Move backward">▼</button>
+      <button class="control-btn" data-control="right" aria-label="Steer right">▶</button>
+    </div>
+    <footer><span>Move: ← → or A / D</span><span>Menu: ↑ ↓ · Select: Enter · Back: Esc</span></footer>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
